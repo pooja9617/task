@@ -1,0 +1,46 @@
+<html>
+
+<script>
+
+    class calculator{
+        constructor(a,b){
+            this.a=a;
+            this.b=b;
+        }
+        addition(){
+            document.write("addition",(this.a+this.b));
+        }
+        substraction(){
+            document.write("substracton",(this.a-this.b));
+        }
+        multiplication(){
+            document.write("multiplication",(this.a*this.b));
+        }
+        division(){
+            document.write("division",(this.a/this.b));
+        }
+    }
+    let a=Number(prompt("enter a number:"));
+    let b=Number(prompt("enter a number:"));
+    let operator=prompt("enter a operator:");
+
+
+    let obj1=new calculator(a,b);
+    
+    if (operator=="+"){
+        obj1.addition()
+    }else if(operator=="-"){
+        obj1.substraction()
+    }else if(operator=="*"){
+        obj1.multiplication()
+    }else if(operator=="/"){
+        obj1.division()
+    }else{
+        document.write("invaild operator")
+    }
+
+
+
+
+</script>
+</html>
